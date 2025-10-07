@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brainiac IT Solution - Contact</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <style>
+  .navbar-brand img {
+    display: inline-block;
+    height: 50px;
+    width: auto;
+  }
+</style>
+</head>
+<body>
+
+<!-- Include Header & Navbar -->
+<
+<!-- Header Bar -->
+<div class="header bg-primary text-white small py-2">
+  <div class="container d-flex justify-content-between">
+    <div><i class="bi bi-telephone-fill"></i> +91 7008261554 &nbsp; | &nbsp;
+         <i class="bi bi-envelope-fill"></i> brainiaccoachinginstitute@gmail.com</div>
+    <div>
+      <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white me-2"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar (External image file logo) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <!-- Replace 'assets/logo.svg' with your file path -->
+      <img src="images/logo.jpg" alt="Brainiac IT Solution logo" width="90" height="100" class="me-2" />
+      <span class="fw-bold">Brainiac IT Solution</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+         <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">Our Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="course-material.html">Study Materials</a></li>
+        <li class="nav-item"><a class="nav-link" href="features.html">Why Us</a></li>
+        <!-- Dropdown for Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="training-schedule.html">Training Schedule</a></li>
+            <li><a class="dropdown-item" href="software-development.html">Software Development</a></li>
+            <li><a class="dropdown-item" href="fresher-jobs.html">Fresher Job Updates</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-primary text-white ms-3"
+             href="https://wa.me/917008261554?text=Hi%20I%20want%20to%20join%20your%20program"
+             target="_blank" rel="noopener">
+            Join WhatsApp
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<section class="container py-5">
+  <h2 class="text-center mb-4">Contact Us</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+
+      <!-- Form submits to Google Forms but stays on this page -->
+      <form id="contactForm"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSd9Fnt_7MivBsWVwjs2ze5W9stf_AFFNINtjOgZRWl1eAfYrA/formResponse"
+            method="POST"
+            target="_blank"
+            onsubmit="showThankYou();">
+
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <input type="text" name="entry.2005620554" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" name="entry.1045781291" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Phone Number</label>
+          <input type="text" name="entry.1166974658" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Message</label>
+          <textarea name="entry.839337160" class="form-control" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+      </form>
+
+      <!-- Hidden iframe (so Google’s response page is hidden) -->
+      <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+      <!-- Thank you message -->
+      <div id="thankYouMsg" class="alert alert-success mt-3" style="display:none;">
+        ✅ Thank you! Your message has been submitted.
+      </div>
+
+    </div>
+    <div class="col-md-6">
+      <h5>Our Office</h5>
+      <p>Brainiac IT Solution, Bhubaneswar, India</p>
+      <p><i class="bi bi-telephone-fill"></i> +91 7008261554</p>
+      <p><i class="bi bi-envelope-fill"></i> brainiaccoachinginstitute@gmail.com</p>
+      <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.464157162618!2d85.8245!3d20.2961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d5d5d7a7a1%3A0x123456789abcdef!2sBhubaneswar!5e0!3m2!1sen!2sin!4v1678899999999" 
+  width="100%" 
+  height="250" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy">
+</iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="py-4 bg-dark text-center text-white">
+  <div class="container">
+    <p>© 2025 Brainiac IT Solution — All Rights Reserved</p>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function showThankYou() {
+  // Wait a short time for submission to complete
+  setTimeout(() => {
+    document.getElementById("contactForm").reset(); // reset fields
+    document.getElementById("thankYouMsg").style.display = "block"; // show thank-you
+  }, 500);
+}
+</script>
+
+<script>
+  window.addEventListener("scroll", function() {
+  const navbar = document.querySelector(".navbar");
+  const header = document.querySelector(".header");
+  
+  if (window.scrollY > header.offsetHeight) {
+    // Scroll past header → make navbar sticky
+    navbar.classList.add("sticky");
+    header.style.display = "none"; // hide header
+  } else {
+    // At top → normal navbar
+    navbar.classList.remove("sticky");
+    header.style.display = "block"; // show header
+  }
+});
+  
+</script>
+
+</body>
+</html>

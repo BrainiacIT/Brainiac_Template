@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brainiac IT Solution - Why Us</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+   <style>
+  .navbar-brand img {
+    display: inline-block;
+    height: 50px;
+    width: auto;
+  }
+</style>
+</head>
+<body>
+
+
+<!-- Header Bar -->
+<div class="header bg-primary text-white small py-2">
+  <div class="container d-flex justify-content-between">
+    <div><i class="bi bi-telephone-fill"></i> +91 7008261554 &nbsp; | &nbsp;
+         <i class="bi bi-envelope-fill"></i> brainiaccoachinginstitute@gmail.com</div>
+    <div>
+      <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white me-2"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar (External image file logo) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <!-- Replace 'assets/logo.svg' with your file path -->
+      <img src="images/logo.jpg" alt="Brainiac IT Solution logo" width="90" height="100" class="me-2" />
+      <span class="fw-bold">Brainiac IT Solution</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+         <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">Our Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="course-material.html">Study Materials</a></li>
+        <li class="nav-item"><a class="nav-link" href="features.html">Why Us</a></li>
+        <!-- Dropdown for Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="training-schedule.html">Training Schedule</a></li>
+            <li><a class="dropdown-item" href="software-development.html">Software Development</a></li>
+            <li><a class="dropdown-item" href="fresher-jobs.html">Fresher Job Updates</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-primary text-white ms-3"
+             href="https://wa.me/917008261554?text=Hi%20I%20want%20to%20join%20your%20program"
+             target="_blank" rel="noopener">
+            Join WhatsApp
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- About Us Image with Text Overlay -->
+<div class="about-us-image-container">
+  <img src="images/about_us.png" alt="About Brainiac IT Solution">
+  <div class="about-us-text">
+    Welcome to Brainiac IT Solution!
+  </div>
+</div>
+
+    <section class="container py-5 about-section" >
+        <div class="about-info">
+            <h2>Who We Are?</h2>
+            <p> Brainiac IT Solution is a leading Indian IT training institute preparing tech-aspirants for flourishing careers in this challenging and competitive domain since 2020. We offer flexible online training options that allow our students to study conveniently and progress at their preferred pace. Teaching at Brainiac IT Solution is supported by years of extensive academic and industry experience, innovative teaching methodologies, and high-quality educational resources.</p>
+        </div>
+        
+    </section>
+
+    <section class="container py-5 mission-vision-goal">
+        <div class="mission">
+            <h3>Mission</h3>
+            <p>Our mission is to allow the aspiring talent of our country to be able to utilize their potential and lead impactful careers in the exciting and stimulating domain of Information Technology.</p>
+        </div>
+        <div class="vision">
+            <h3>Vision</h3>
+            <p>We work to provide the budding tech-aspirants of our nation with a useful, inexpensive learning platform where they can benefit from the deep IT domain expertise and extensive industry experience of our proficient instructors.</p>
+        </div>
+        <div class="goal">
+            <h3>Goal</h3>
+            <p>Our goal is to produce learned, qualified, and skilled IT experts with top-class technical skills and reliable managerial abilities capable of driving business growth and leading organizations to success.</p>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <h2>Why Choose Us?</h2>
+        <p>As a committed IT training institute that bases its teaching on practice and experience, we boast a record of producing competent IT professionals today leading fulfilling and successful professional careers. Our tutors are responsible, experienced, and educated IT experts that give each of our students the attention and care required to master the various challenging IT concepts and technologies.</p>
+    </section>
+
+
+
+<footer class="py-4 bg-dark text-center text-white">
+  <div class="container">
+    <p>© 2025 Brainiac IT Solution — All Rights Reserved</p>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener("scroll", function() {
+  const navbar = document.querySelector(".navbar");
+  const header = document.querySelector(".header");
+  
+  if (window.scrollY > header.offsetHeight) {
+    // Scroll past header → make navbar sticky
+    navbar.classList.add("sticky");
+    header.style.display = "none"; // hide header
+  } else {
+    // At top → normal navbar
+    navbar.classList.remove("sticky");
+    header.style.display = "block"; // show header
+  }
+});
+  
+</script>
+</body>
+</html>
