@@ -8,21 +8,20 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
-  <!-- Optional small CSS if you want consistent sizing -->
-<style>
-  .navbar-brand img {
-    display: inline-block;
-    height: 50px;
-    width: auto;
-  }
-</style>
+  <style>
+    .navbar-brand img {
+      display: inline-block;
+      height: 50px;
+      width: auto;
+    }
+  </style>
 </head>
 <body>
 
 <!-- Header Bar -->
 <div class="header bg-primary text-white small py-2">
   <div class="container d-flex justify-content-between">
-    <div><i class="bi bi-telephone-fill"></i> +91 8260934011 &nbsp; | &nbsp;
+    <div><i class="bi bi-telephone-fill"></i> +91 7008261554 &nbsp; | &nbsp;
          <i class="bi bi-envelope-fill"></i> brainiaccoachinginstitute@gmail.com</div>
     <div>
       <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
@@ -32,11 +31,10 @@
   </div>
 </div>
 
-<!-- Navbar (External image file logo) -->
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <!-- Replace 'assets/logo.svg' with your file path -->
       <img src="images/logo.jpg" alt="Brainiac IT Solution logo" width="90" height="100" class="me-2" />
       <span class="fw-bold">Brainiac IT Solution</span>
     </a>
@@ -47,17 +45,16 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-         <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="courses.html">Our Courses</a></li>
         <li class="nav-item"><a class="nav-link" href="course-material.html">Study Materials</a></li>
         <li class="nav-item"><a class="nav-link" href="features.html">Why Us</a></li>
-        <!-- Dropdown for Services -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
             Services
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="training-schedule.html">Training Schedule</a></li>
             <li><a class="dropdown-item" href="software-development.html">Software Development</a></li>
             <li><a class="dropdown-item" href="fresher-jobs.html">Fresher Job Updates</a></li>
@@ -77,15 +74,11 @@
   </div>
 </nav>
 
-
-
-
-<!-- Hero Section with Carousel -->
+<!-- Hero -->
 <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-
     <div class="carousel-item active">
-      <div class="hero-slide d-flex align-items-center text-center text-white" 
+      <div class="hero-slide d-flex align-items-center text-center text-white"
            style="background-image: url('images/banner1.jpg'); height: 500px; background-size: cover;">
         <div class="container">
           <h1 class="display-4 fw-bold">Welcome to Brainiac IT Solution</h1>
@@ -94,180 +87,10 @@
         </div>
       </div>
     </div>
-
-    <div class="carousel-item">
-      <div class="hero-slide d-flex align-items-center text-center text-white" 
-           style="background-image: url('images/banner1.jpg'); height: 500px; background-size: cover;">
-        <div class="container">
-          <h1 class="display-4 fw-bold">Learn from Industry Experts</h1>
-          <p class="lead">Hands-on Training with Real-time Projects</p>
-          <a href="features.html" class="btn btn-primary btn-lg">Why Choose Us</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <div class="hero-slide d-flex align-items-center text-center text-white" 
-           style="background-image: url('images/banner4.jpg'); height: 500px; background-size: cover;">
-        <div class="container">
-          <h1 class="display-4 fw-bold">Kickstart Your IT Career</h1>
-          <p class="lead">100% Placement Assistance & Career Support</p>
-          <a href="contact.html" class="btn btn-success btn-lg">Get in Touch</a>
-        </div>
-      </div>
-    </div>
-
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
 </div>
 
-
-
-<!-- Featured Programs -->
-<section class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-4">Featured Programs</h2>
-    <div class="row g-4">
-
-      <!-- Java Full Stack -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <img src="images/courses/JAVA FULL STACK (1).jpg" class="card-img-top" alt="Java Full Stack">
-          <div class="card-body">
-            <h5 class="card-title">Java Full Stack</h5>
-            <p class="card-text">Next Batch: 20th Sep</p>
-            <a href="#" class="btn btn-primary">Enroll Now</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Postgres SQL -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <img src="images/courses/postgresql.jpg" class="card-img-top" alt="Postgres SQL">
-          <div class="card-body">
-            <h5 class="card-title">PostgreSQL Database</h5>
-            <p class="card-text">Next Batch: 25th Sep</p>
-            <a href="#" class="btn btn-primary">Enroll Now</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Python -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <img src="images/courses/python-fullstack-online-training.jpg" class="card-img-top" alt="Python">
-          <div class="card-body">
-            <h5 class="card-title">python-fullstack-online-training</h5>
-            <p class="card-text">Next Batch: 1st Oct</p>
-            <a href="#" class="btn btn-primary">Enroll Now</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Career Counselling -->
-<section class="py-5 text-center bg-primary text-white">
-  <div class="container">
-    <h2>Not Sure Which IT Program Fits You?</h2>
-    <p class="lead">Get Free 1-on-1 Career Counselling Today!</p>
-    <a href="contact.html" class="btn btn-light">Connect With Our Team</a>
-  </div>
-</section>
-
-<!-- Why Us -->
-<section class="py-5">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-4">Why Choose Brainiac IT?</h2>
-    <div class="row g-4">
-
-      <div class="col-md-4">
-        <div class="p-4 shadow-sm h-100 text-white bg-primary rounded-3">
-          Trusted Trainers
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="p-4 shadow-sm h-100 text-white bg-success rounded-3">
-          Job Assistance
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="p-4 shadow-sm h-100 text-white bg-warning rounded-3">
-          Course Material
-        </div>
-      </div>
-
-    </div>
-    <br>
-    <div class="row g-4">
-
-      <div class="col-md-4">
-        <div class="p-4 shadow-sm h-100 text-white bg-primary rounded-3">
-          Real-time Project assistance
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="p-4 shadow-sm h-100 text-white bg-success rounded-3">
-          Revision Classes 
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="p-4 shadow-sm h-100 text-white bg-warning rounded-3">
-          Remote Location class conducting.
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Training Modes -->
-<section class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-4">Training Modes</h2>
-    <div class="row g-4">
-      <div class="col-md-3"><div class="p-3 shadow-sm text-white bg-success h-100">Online</div></div>
-      <div class="col-md-3"><div class="p-3 shadow-sm text-white bg-primary h-100">Classroom</div></div>
-      <div class="col-md-3"><div class="p-3 shadow-sm text-white bg-success h-100">Weekend</div></div>
-      <div class="col-md-3"><div class="p-3 shadow-sm text-white bg-warning h-100">Corporate</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- Features -->
-<section class="py-5">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-4">Our Features</h2>
-    <div class="row g-4">
-      <div class="col-md-3"><div class="p-3 shadow-sm text-white bg-success h-100">
-        Real-time Projects</div></div>
-      <div class="col-md-3"><div class="p-3 shadow-sm text-white bg-primary h-100">
-        Mock Interviews</div></div>
-      <div class="col-md-3"><div class="p-3 shadow-sm text-white bg-success h-100">
-        Placement Support</div></div>
-      <div class="col-md-3"><div class="p-3 shadow-sm text-white bg-warning h-100">
-        Expert Trainers</div></div>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- Contact Section -->
+<!-- Enquiry Form -->
 <section class="py-5">
   <div class="container">
     <div class="row">
@@ -276,60 +99,78 @@
         <p><i class="bi bi-envelope-fill"></i> brainiaccoachinginstitute@gmail.com</p>
         <p><i class="bi bi-telephone-fill"></i> +91 7008261554</p>
         <p><i class="bi bi-geo-alt-fill"></i> Bhubaneswar, India</p>
-        <iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.464157162618!2d85.8245!3d20.2961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d5d5d7a7a1%3A0x123456789abcdef!2sBhubaneswar!5e0!3m2!1sen!2sin!4v1678899999999" 
-  width="100%" 
-  height="250" 
-  style="border:0;" 
-  allowfullscreen="" 
-  loading="lazy">
-</iframe>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.464157162618!2d85.8245!3d20.2961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d5d5d7a7a1%3A0x123456789abcdef!2sBhubaneswar!5e0!3m2!1sen!2sin!4v1678899999999" 
+	   width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"> </iframe>
       </div>
+
       <div class="col-md-6">
         <h2 class="fw-bold">Enquiry Form</h2>
-        <!-- Form submits to Google Forms but stays on this page -->
-      <form id="contactForm"
-            action="https://docs.google.com/forms/d/e/1FAIpQLSd9Fnt_7MivBsWVwjs2ze5W9stf_AFFNINtjOgZRWl1eAfYrA/formResponse"
-            method="POST"
-            target="_blank"
-            onsubmit="showThankYou();">
+        <form id="contact-form" novalidate>
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" required>
+          </div>
 
-        <div class="mb-3">
-          <label class="form-label">Name</label>
-          <input type="text" name="entry.2005620554" class="form-control" required>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Phone Number</label>
+            <input type="text" name="phone" id="phone" class="form-control"
+                   pattern="[0-9]{10}" maxlength="10"
+                   title="Please enter a valid 10-digit phone number" required>
+            <div class="invalid-feedback">Please enter a 10-digit phone number.</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Which Course Do You Want to Learn?</label>
+            <select name="course" class="form-select" required>
+              <option value="">-- Select a course --</option>
+            <option value="Java Full Stack">Java Full Stack</option>
+            <option value="Python Full Stack">Python Full Stack</option>
+            <option value="Web Development">Web Development</option>
+            <option value="HTML & Javascript">HTML & Javascript</option>
+            <option value="Core Java">Core Java</option>
+			<option value="Spring Boot">Spring Boot</option>
+			<option value="JQuery">jQuery</option>
+			<option value="Webservice">Webservice</option>
+			<option value="Angular">Angular</option>
+			<option value="React">React</option>
+			<option value="Microservice">Microservice</option>
+			<option value="PostgreSQL Database">PostgreSQL Database</option>
+            <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Currently What You Are Doing?</label>
+            <select name="occupation" class="form-select" required>
+              <option value="">-- Select Option --</option>
+              <option>Student</option>
+              <option>Working Professional</option>
+              <option>Job Seeker</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea name="message" class="form-control" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+
+        <div id="thankYouMsg" class="alert alert-success mt-3" style="display:none;">
+          ✅ Thank you! Your message has been submitted.We will call you soon.
         </div>
-
-        <div class="mb-3">
-          <label class="form-label">Email</label>
-          <input type="email" name="entry.1045781291" class="form-control" required>
-        </div>
-
-        <div class="mb-3">
-          <label class="form-label">Phone Number</label>
-          <input type="text" name="entry.1166974658" class="form-control" required>
-        </div>
-
-        <div class="mb-3">
-          <label class="form-label">Message</label>
-          <textarea name="entry.839337160" class="form-control" rows="4" required></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary w-100">Send Message</button>
-      </form>
-
-      <!-- Hidden iframe (so Google’s response page is hidden) -->
-      <iframe name="hidden_iframe" style="display:none;"></iframe>
-
-      <!-- Thank you message -->
-      <div id="thankYouMsg" class="alert alert-success mt-3" style="display:none;">
-        ✅ Thank you! Your message has been submitted.
-      </div>
-
       </div>
     </div>
   </div>
 </section>
-<!-- Footer -->
+
 <footer class="py-4 bg-dark text-center text-white">
   <div class="container">
     <p>© 2025 Brainiac IT Solution — All Rights Reserved</p>
@@ -337,33 +178,60 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  window.addEventListener("scroll", function() {
-  const navbar = document.querySelector(".navbar");
-  const header = document.querySelector(".header");
-  
-  if (window.scrollY > header.offsetHeight) {
-    // Scroll past header → make navbar sticky
-    navbar.classList.add("sticky");
-    header.style.display = "none"; // hide header
-  } else {
-    // At top → normal navbar
-    navbar.classList.remove("sticky");
-    header.style.display = "block"; // show header
-  }
-});
-  
-</script>
-<script>
-function showThankYou() {
-  // Wait a short time for submission to complete
-  setTimeout(() => {
-    document.getElementById("contactForm").reset(); // reset fields
-    document.getElementById("thankYouMsg").style.display = "block"; // show thank-you
-  }, 500);
-}
-</script>
 
+<script>
+// ✅ Sheet.best API URL
+const sheetBestURL = "https://api.sheetbest.com/sheets/eaf2e402-7943-4e23-a7ea-32de0eaa1e56";
+
+document.getElementById("contact-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+  const phoneInput = form.phone;
+  const phone = phoneInput.value.trim();
+
+  // ✅ 10-digit phone validation
+  if (!/^[0-9]{10}$/.test(phone)) {
+    phoneInput.classList.add("is-invalid");
+    phoneInput.focus();
+    return;
+  } else {
+    phoneInput.classList.remove("is-invalid");
+  }
+
+  const formData = {
+    Name: form.name.value.trim(),
+    Email: form.email.value.trim(),
+    Phone: phone,
+    Course: form.course.value.trim(),
+    Occupation: form.occupation.value.trim(),
+    Message: form.message.value.trim(),
+    Timestamp: new Date().toLocaleString(),
+  };
+
+  const submitBtn = form.querySelector("button[type='submit']");
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Sending...";
+
+  try {
+    const response = await fetch(sheetBestURL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    if (!response.ok) throw new Error("Failed to submit form.");
+
+    form.reset();
+    document.getElementById("thankYouMsg").style.display = "block";
+    setTimeout(() => (document.getElementById("thankYouMsg").style.display = "none"), 4000);
+  } catch (error) {
+    alert("❌ Error submitting form: " + error.message);
+  }
+
+  submitBtn.disabled = false;
+  submitBtn.textContent = "Send Message";
+});
+</script>
 </body>
 </html>
-
